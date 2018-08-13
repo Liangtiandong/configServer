@@ -1,0 +1,21 @@
+server:
+  port: ${SERVICE_PORT}
+spring:
+  application:
+    name: portal-service
+swagger:
+  name: LTD   
+  url: LTDCodeLab    
+  email: liangtiandong@live.com   
+  title:  protal-service    
+  license:  apach 2.0
+  licenseUrl:  www.whsxt.com
+  version:  1.0
+  
+eureka:
+  instance:
+    hostname: 192.168.14.131
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVICES}
